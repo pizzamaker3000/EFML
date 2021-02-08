@@ -1,0 +1,13 @@
+#hello {
+    margin-top: 100px;
+    text-align: center;
+}
+#miss {
+    text-align: center;
+}
+#cat {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
