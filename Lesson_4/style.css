@@ -1,0 +1,23 @@
+#hello {
+    margin: 3rem;
+}
+
+#gameBackgroundImg {
+    background-image: url(road.jpg);
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+
+#gameTableImg {
+    background-image: url(paper.jpg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    min-height: 400px;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+#man {
+    width: 90%;
+    margin-top: 100px;
+}
