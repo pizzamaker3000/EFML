@@ -1,0 +1,14 @@
+#gp {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+img,button {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+}
+#columns1, #columns2 {
+    text-align: center;
+}
