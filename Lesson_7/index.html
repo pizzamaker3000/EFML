@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cups">Количество чашечек: 1</div>
+    <div id="diamonds">Количество бриллиантов: 1</div>
+    <div id="changeText" >НАЧАЛО!!!</div>
+    <button id="buttonNextMove" onclick="nextMove()">Дальше</button>
+    <p><img id="changeImg" src="1.jpg"/></p>
+    <div class="container" style="display: none;" id="blockQuestions">
+        <div class="row mb-3">
+            <div class="col">
+                <button id="firstAns">Первый вариант</button>
+            </div>
+            <div class="col">
+                <button id="secondAns">Второй вариант</button>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <button id="thirdAns">Третий вариант</button>
+            </div>
+            <div class="col">
+                <button id="fourthAns"> Четвертый вариант</button>
+            </div>
+        </div>
+    </div>
+    <button id="buttonGoToStart" style="display: none;" onclick="goToStart()">На начало игры</button>
+    <script src="buttons.js"></script>
+</body>
+</html>
