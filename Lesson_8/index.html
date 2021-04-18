@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Button trigger modal -->
+    <button id="choosePlot" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+        Выбрать сюжет
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Выбор сюжета</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="choosePlot(1)">1</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="choosePlot(2)">2</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="choosePlot(3)">3</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="choosePlot(4)">4</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="cups">Количество чашечек: 1</div>
+    <div id="diamonds">Количество бриллиантов: 1</div>
+    <div id="changeText" >НАЧАЛО!!!</div>
+    <button id="buttonNextMove" onclick="nextMove()">Дальше</button>
+    <p><img id="changeImg" src="1.jpg"/></p>
+    <div class="container" style="display: none;" id="blockQuestions">
+        <div class="row mb-3">
+            <div class="col">
+                <button id="firstAns">Первый вариант</button>
+            </div>
+            <div class="col">
+                <button id="secondAns">Второй вариант</button>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <button id="thirdAns">Третий вариант</button>
+            </div>
+            <div class="col">
+                <button id="fourthAns"> Четвертый вариант</button>
+            </div>
+        </div>
+    </div>
+    <button id="buttonGoToStart" style="display: none;" onclick="goToStart()">На начало игры</button>
+    <script src="buttons.js"></script>
+</body>
+</html>

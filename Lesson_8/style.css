@@ -1,0 +1,24 @@
+#changeText {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#cups {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#diamonds {
+    text-align: center;
+    margin-bottom: 20px;
+}
+img,button {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+}
+#choosePlot {
+    margin-top: 20px;
+    width: 30%;
+}
